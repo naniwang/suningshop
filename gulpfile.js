@@ -25,6 +25,21 @@ gulp.task("copyJs",function(){
 	.pipe(gulp.dest("dist/js"));
 });
 
+gulp.task("copyImg",function(){
+	gulp.src("img/**")
+	.pipe(gulp.dest("dist/img"));
+})
+
+gulp.task("font",function(){
+	gulp.src("font/*")
+	.pipe(gulp.dest("dist/font"));
+})
+
+gulp.task("jquery",function(){
+	gulp.src("jquery-1.11.0.js")
+	.pipe(gulp.dest("dist"));
+})
+
 gulp.task("build",["copyHtml","copyCss","copyJs"],function(){
 	console.log("编译成功");
 });
@@ -34,7 +49,7 @@ gulp.task("server",function(){
 });
 
 gulp.task("watch",function(){
-	gulp.watch(["html/*.html","css/*.scss","js/*.js"],["copyHtml","copyCss","copyJs"]);
+	gulp.watch(["html/*.html","css/*.scss","js/*.js","img/**"],["copyHtml","copyCss","copyJs","copyImg"]);
 	
 })
  gulp.task("default",["server","watch"]);

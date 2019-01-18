@@ -1,0 +1,332 @@
+.header{
+    width: 970px;
+    height: 100px;
+    margin: 0 auto;
+    .logo{
+        width: 190px;
+        height: 100%;
+        display: block;
+        float: left;
+        margin-right: 24px;
+    }
+    .tixing{
+        float: left;
+        font-size: 14px;
+        padding-top: 37px;
+        .bind-phone{
+            color: #333;
+            background: #fefff1;
+            border: 1px solid #fecd66;
+            line-height: 16px;
+            padding: 4px 6px;
+            margin-right: -50px;
+        }
+        .suggest{
+            float: right;
+            margin-top: 8px;
+            color: #333333;
+            .icon-yijianfankui{
+                color: #333333;
+            }
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+}
+.main{
+    width: 100%;
+    height: 570px;
+    background: url(../img/bj.png) no-repeat;
+    position: relative;
+    .login{
+        position: absolute;
+        width: 360px;
+        top: 50px;
+        right: 200px;
+        background: #fff;
+        box-shadow: 0 0 2px #ececec;
+        .tab{
+            height: 50px;
+            line-height: 20px;
+            font-size: 16px;
+            overflow: hidden;
+            border-bottom: 1px solid #eee;
+            a{
+                width: 49%;
+                height: 100%;
+                display: block;
+                float: left;
+                text-align: center;
+                color: #333;
+                line-height: 50px;
+                &:hover{
+                    color: #f60;
+                }
+                span{
+                    padding-bottom: 12px;
+                }
+            }
+            .saoma{
+                color: #f60;
+                span{
+                    border-bottom:4px solid #f60 ;
+                }
+            }
+            i{
+                float: left;
+                line-height: 50px;
+                font-style: normal;
+                color: #ccc;
+            }
+        }
+        .scan-login{
+            position: relative;
+            text-align: center;
+            padding-top: 30px;
+            .scan-box{
+                height: 156px;
+                padding: 20px 34px 0;
+                position: relative;
+                margin-bottom: 17px;
+                .erweima{
+                    width: 141px;
+                    height: 141px;
+                    margin: 0 auto;
+                    position: relative;
+                }
+                .saomatu{
+                    position: absolute;
+                    top: -20px;
+                    right: 34px;
+                    width: 133px;
+                    height: 200px;
+                    display: none;
+                }
+            }
+            p{
+                text-align: center;
+                margin-bottom: 7px;
+                font-size: 12px;
+            }
+        }
+        
+        .pc-login{
+            position: relative;
+            width: 360px;
+            margin-top: 40px;
+            background: #fff;
+            .user-login{
+                padding: 0 24px;
+                .username{
+                    position: relative;
+                    border: 1px solid #ddd;
+                    color: #999;
+                    padding: 0 32px 0 10px;
+                    height: 36px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    clear: both;
+                }
+                .userpwd{
+                    position: relative;
+                    border: 1px solid #ddd;
+                    color: #999;
+                    padding: 0 32px 0 10px;
+                    height: 36px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    clear: both;
+                }
+                .login-help{
+                    line-height: 35px;
+                     height: 35px;
+                     margin-top: 10px;
+                     
+                }
+                .icon-ren,.icon-shengxian{
+                    font-size: 25px;
+                    line-height: 36px;
+                    text-align: center;
+                    color: #999999;
+                }
+                input{
+                    height: 36px;
+                    width: 230px;
+                    line-height: 36px;
+                    margin-left: 10px;
+                    border: 0;
+                    font-size: 14px;
+                    outline: none;
+                }
+                .login-help{
+                    line-height: 35px;
+                    height: 35px;
+                    padding-top: 10px;
+                    a{
+                        font-size: 12px;
+                        color: #333333;
+                        &:hover{
+                            color: #FF6600;
+                        }
+                    }
+                    .message{
+                        float: left;
+                    }
+                    .forget{
+                        float: right;
+                    }
+                }
+                #login-btn{
+                    display: block;
+                    width: 310px;
+                    line-height: 40px;
+                    margin: 0 auto;
+                    background: #f60;
+                    border-radius: 2px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            display:none;
+        }
+        .message-login{
+            display: none;
+            position: relative;
+            width: 360px;
+            margin-top: 40px;
+            background: #fff;
+            .phone-login{
+                padding: 0 24px;
+                .username{
+                    position: relative;
+                    border: 1px solid #ddd;
+                    color: #999;
+                    padding: 0 32px 0 10px;
+                    height: 36px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    clear: both;
+                }
+                .phone-yzm{
+                    position: relative;
+                    border: 1px solid #ddd;
+                    color: #999;
+                    padding: 0 0 0 10px;
+                    height: 36px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    clear: both;
+                    .icon-shengxian{
+                        float: left;
+                    }
+                    #yzm{
+                    width: 160px;
+                    float: left;
+                    }
+                    #login-yzm{
+                        float: right;
+                    }
+                }
+                .login-help{
+                    line-height: 35px;
+                     height: 35px;
+                     margin-top: 10px;
+                     
+                }
+                .icon-ren,.icon-shengxian{
+                    font-size: 25px;
+                    line-height: 36px;
+                    text-align: center;
+                    color: #999999;
+                }
+                input{
+                    height: 36px;
+                    width: 230px;
+                    line-height: 36px;
+                    margin-left: 10px;
+                    border: 0;
+                    font-size: 14px;
+                    outline: none;
+                }
+                
+                .login-help{
+                    line-height: 35px;
+                    height: 35px;
+                    padding-top: 10px;
+                    a{
+                        font-size: 12px;
+                        color: #333333;
+                        &:hover{
+                            color: #FF6600;
+                        }
+                    }
+                    .message{
+                        float: left;
+                    }
+                    .forget{
+                        float: right;
+                    }
+                }
+                #login-btn{
+                    display: block;
+                    width: 310px;
+                    line-height: 40px;
+                    margin: 0 auto;
+                    background: #f60;
+                    border-radius: 2px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+        
+        .regist{
+            text-align: center;
+            margin: 12px 0 35px;
+            font-size: 12px;
+            a{
+                color: #333333;
+                &:hover{
+                    color: #FF6600;
+                }
+            }
+        }
+        .login-method{
+            position: relative;
+            width: 310px;
+            margin: 0 auto;
+            border-top: 1px solid #ddd;
+            padding: 19px 0 17px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            span{
+                position: absolute;
+                top: -9px;
+                left: 50%;
+                margin-left: -64px;
+                color: #999;
+                width: 128px;
+                background: #fff;
+                text-align: center;
+            }
+            a{
+                float: left;
+                padding: 0 7px;
+                border-right: 1px solid #dedcd5;
+                line-height: 16px;
+                color: #333333;
+                &:last-of-type{
+                    border:0 ;
+                }
+                i{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}

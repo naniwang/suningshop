@@ -1,0 +1,213 @@
+html,body,ul,li,ol,dl,dt,dd,p,fieldset,form,h1,h2,h3,h4,h5,h6,th,hr,button,textarea,input,legend{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f8f8f8;
+    color: #222;
+    font-family: "微软雅黑";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 990px;
+    height: 88px;
+    margin: 0 auto;
+    .logo{
+        width: 190px;
+        height: 100%;
+        display: block;
+        float: left;
+        margin-right: 24px;
+        background: url(../img/snlogo.png) no-repeat;
+    }
+    .logo-text{
+        font-size: 18px;
+        float: left;
+        color: #666;
+        line-height: 88px;
+    }
+    .login{
+        float: right;
+        margin-top: 63px;
+        color: #333;
+        font-size: 12px ;
+        &:hover{
+            color: orange;
+        }
+    }
+}
+#mask{
+    position: fixed;
+    width: 570px;
+    height: 430px;
+    top: 50%;
+    left: 50%;
+    margin-top: -215px;
+    margin-left: -305px;
+    z-index: 999;
+    border: 3px solid #999999;
+    background: #fff;
+    padding: 0 20px;
+    .head{
+        height: 40px;
+        line-height: 40px;
+        box-shadow: inset 0 -1px 0 0 #ddd;
+        span{
+            float: left;
+            font-size: 14px;
+            color: #333;
+            font-weight: 700;
+        }
+        a{
+            float: right;
+            font-size: 14px;
+            color: #333333;
+            font-weight: 700;
+        }
+    }
+    .body{
+        padding-top: 20px;
+        p{
+            font-size: 12px;
+            color: #333;
+            line-height: 20px;
+        }
+        #xieyi-btn{
+            display: block;
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 2px;
+            text-align: center;
+            background: #f60;
+            font-size: 14px;
+            color: #fff;
+            margin: 6px auto 0;
+            cursor: pointer;
+        }
+    }
+}
+.main{
+    width: 990px;
+    margin: 0 auto;
+    border:1px solid #ddd ;
+    border-top: 3px solid #f90;
+    padding: 55px 0;
+    line-height: 1.5;
+    .regist{
+        width: 380px;
+        margin: 0 auto;
+        .present{
+            line-height: 17px;
+            margin-bottom: 17px;
+            .icon-libao1{
+                color: orange;
+                float: left;
+            }
+            .text{
+                font-size: 14px;
+                padding-left: 2px;
+            }
+        }
+        .input-box{
+            width: 378px;
+            height: 38px;
+            border: 1px solid #ccc;
+            line-height: 38px;
+            margin-bottom: 25px;
+            font-size: 12px;
+            span{
+                float: left;
+                width: 76px;
+                padding-left: 11px;
+            }
+            #phone,#pwd,#e-mail,#sexy{
+                display: inline-block;
+                width: 291px;
+                height: 100%;
+                font-size: 14px;
+                color: #333;
+                border: 0;
+                background: 0;
+                outline: none;
+            }
+            .sp{
+                float: left;
+            }
+            #yzm{
+                display: inline-block;
+                width: 142px;
+                height: 100%;
+                font-size: 14px;
+                color: #333;
+                border: none;
+                background: 0;
+                outline: none;
+                float: left;
+            }
+            #suiji-yzm{
+                width: 148px;
+                height: 100%;
+                float: left;
+                line-height: 38px;
+                text-align: center;
+                background: #F5F5F5;
+                border: 1px solid #bbb;
+                font-size: 14px;
+                margin: -1px -1px 0 0;
+            }
+        }
+        .error-tishi,.tishi,.error-email,.error-sex{
+            height: 22px;
+            line-height: 22px;
+            margin: -25px 0 3px;
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+        .error{
+            height: 34px;
+            margin-top: -25px;
+            .send-fail{
+                height: 34px;
+                line-height: 34px;
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+        }
+        .mima-tishi{
+            height: 50px;
+            margin-top: -25px;
+            .tishi{
+                color: #999;
+                line-height: 22px;
+                a{
+                    color: #333;
+                    &:hover{
+                        color: orange;
+                    }
+                }
+            }
+        }
+        #regist-btn{
+            width: 100%;
+            line-height: 40px;
+            background: #f60;
+            font-size: 20px;
+            color: #fff;
+            margin: 24px 0 5px;
+            border:0 ;
+            border-radius:2px; 
+            &:hover{
+                background: orangered;
+            }
+        }
+    }
+}
+

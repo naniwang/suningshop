@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//所有同学使用的接口都是一样的
+			//注册，登录等这些都是同一个后台
+			//列表数据展示都是一样的
+			//进公司里了，每个公司都有自己的接口
+			
+			//使用接口
+			//1.要知道接口路径
+			//2.该接口的请求方法（get，post，put，delete）
+			//3.该接口的参数（需不需要参数，传递什么参数，传递的参数一些限制）
+			//4.该接口的返回值
+			//5.该接口是否支持跨域，是否需要跨域
+			
+			//提供的注册接口有点慢，没有报错就表示成功
+			//咱们一般喜欢，注册成功时跳转到登录页面，可以在注册页面手动给一个登录入口，点击登录时让进入登录页面
+			
+			$(function(){
+				//验证用户名 0 表示成功，是说数据库有这个用户名，用户名重名
+				/*$.get("http://47.104.244.134:8080/username.do",{username:"111a_123honny"},function(data){
+					console.log(data);
+				})*/
+				
+				/*$.post("http://47.104.244.134:8080/usersave.do",{"username":"111a_123honny","password":111,"email":"111a_123honny@163.com","sex":"男"},function(data){
+					console.log(data);
+				});*/
+				
+				$.post("http://47.104.244.134:8080/userlogin.do",{"name":"111a_123honny","password":"111"},function(data){
+					if(data.code==0){
+						location.href = "index.html";
+					}
+				});
+			})
+			
+		</script>
+	</body>
+</html>

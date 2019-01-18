@@ -1,0 +1,45 @@
+html,body,ul,li,ol,dl,dt,dd,p,fieldset,form,h1,h2,h3,h4,h5,h6,th,hr,button,textarea,input,legend{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    height: 185px;
+    padding-top: 15px;
+    background: none;
+    text-align: center;
+    p{
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        span{
+            color: #888;
+            padding: 0 8px;
+        }
+    }
+    .footer-list{
+        a{
+            color:#666666;
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+    .footer-list1{
+        color: #999;
+        .icon-gongan{
+            color: yellow;
+        }
+        a{
+            color: #999999;
+        }
+    }
+}

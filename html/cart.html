@@ -2,8 +2,331 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common-footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<div class="nav">
+			<div class="nav-content">
+				<div class="nav-left">
+					<a href="#"><i class="iconfont icon-Home"></i>返回首页</a>
+					<div id="guid">
+						<a href="#">网站导航<i class="iconfont icon-xialajiantou"></i></a>
+						<div id="guid-child">
+							<dl>
+								<dt>特色购物</dt>
+								<dd>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">苏宁Outlets</a></p>
+									<p><a href="#">苏宁互联</a></p>
+									<p><a href="#">导购指南</a></p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>主题频道</dt>
+								<dd>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">红孩子母婴</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">电器城</a></P>
+									<P><a href="#">医药馆</a></P>
+								</dd>
+							</dl>
+							<dl>
+								<dt>生活助手</dt>
+								<dd>
+									<P><a href="#">零钱宝<i class="iconfont icon-digi_nav_1"></i></a></P>
+									<p><a href="#">手机充值</a></p>
+									<p><a href="#">手机充值</a></p>
+									<p><a href="#">手机充值</a></p>
+									<p><a href="#">手机充值</a></p>
+									<p><a href="#">手机充值</a></p>
+									<p><a href="#">机票</a></p>
+									<p><a href="#">手机充值</a></p>
+									<p><a href="#">酒店</a></p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>会员服务</dt>
+								<dd>
+									<P><a href="#">会员联盟<i class="iconfont icon-digi_nav_1"></i></a></P>
+									<p><a href="#">延长保修</a></p>
+									<p><a href="#">延长保修</a></p>
+									<p><a href="#">延长保修</a></p>
+									<p><a href="#">延长保修</a></p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>更多热点</dt>
+								<dd>
+									<P><a href="#">pp视频</a></P>
+									<P><a href="#">商家入驻<i class="iconfont icon-digi_nav_1"></i></a></P>
+									<P><a href="#">pp视频</a></P>
+									<P><a href="#">pp视频</a></P>
+									<P><a href="#">pp视频</a></P>
+									<P><a href="#">pp视频</a></P>
+									<P><a href="#">苏宁公益<i class="iconfont icon-digi_nav_1"></i></a></P>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div id="bussiness">
+						<a href="#">商业入驻<i class="iconfont icon-xialajiantou"></i></a>
+						<div id="bussiness-child">
+							<ul>
+								<li><a href="#">合作招商</a></li>
+								<li><a href="#">合作招商</a></li>
+								<li><a href="#">合作招商</a></li>
+								<li><a href="#">合作招商</a></li>
+								<li><a href="#">合作招商</a></li>
+								<li><a href="#">合作招商</a></li>
+								<li><a href="#">规则众议院</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="server">
+						<a href="#">客户服务<i class="iconfont icon-xialajiantou"></i></a>
+						<div id="server-child">
+							<ul>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">苏宁帮客</a></li>
+								<li><a href="#">在线咨询</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="nav-right">
+					<a href="login.html">请登录</a>
+					<a href="regist.html" style="color: #FF6600;">注册有礼</a>
+					<div id="order">
+						<a href="#">我的订单<i class="iconfont icon-xialajiantou"></i></a>
+						<div id="order-child">
+							<ul>
+								<li><a href="#">待支付</a></li>
+								<li><a href="#">待收货</a></li>
+								<li><a href="#">待评价</a></li>
+								<li><a href="#">修改订单</a></li>
+							</ul> 
+						</div>
+					</div>
+					<div id="shopping">
+						<a href="#">我的易购<i class="iconfont icon-xialajiantou"></i></a>
+						<div id="shopping-child">
+							<div class="shopping-child-login">
+								<a href="login.html"><img src="img/lion.jpg"</a>
+								<a href="login.html">请登录</a>
+								<ul>
+									<li><a href="#">我的二手</a></li>
+									<li><a href="#">我的关注</a></li>
+									<li><a href="#">我的金融</a></li>
+									<li><a href="#">苏宁会员</a></li>
+									<li><a href="#">我的任性付</a></li>
+									<li><a href="#">我的优惠券</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a href="#">苏宁会员</a>
+					<div id="cart">
+						<i class="iconfont icon-gouwuchekong" style="color: #FF6600;font-size: 25px;"></i>
+						<a href="cart.html" style="color: #FF6600;">购物车</a>
+						<span id="num" style="color: #FF6600;">0</span>
+						<em class="iconfont icon-xialajiantou"></em>
+						<div id="cart-child">
+							<div><img src="img/cartpic.jpg"/></div>
+							<p>不要让你的购物车空着哦，快去逛逛吧</p>
+							<p>不要让你的购物车空着哦，快去逛逛吧</p>
+							<a href="login.html">登录</a>
+						</div>
+					</div>
+					<a href="#">易付宝</a>
+					<a href="#">企业采购</a>
+					<div id="mobile">
+						<a href="#">手机苏宁<i class="iconfont icon-xialajiantou"></i></a>
+						<div id="mobile-child">
+							<div class="shengke">
+								<img src="img/sk.png"/>
+								<p>关注苏宁推客公众号</p>
+								<p>关号电饭锅电饭锅</p>
+							</div>
+							<div class="yi">
+								<img src="img/yi.png"/>
+								<p>扫一扫</p>
+								<p>下载苏宁金融APP</p>
+							</div>
+							<div class="suning">
+								<img src="img/server_ma.jpg"/>
+								<p>扫一扫</p>
+								<p>关注苏宁易购服务号</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="input-logo">
+			<div class="logo-box">
+				<a href="login.html"><img src="img/cs_logo.jpg"/></a>
+			</div>
+			<div class="search">
+				<i class="iconfont icon-sousuo"></i>
+				<form>
+					<div class="search-box">
+						<input type="text" placeholder="滋补要趁早" class="search-input">
+					</div>
+					<input type="submit" value="搜索" id="search-submit"/>
+				</form>
+				<div class="new-list">
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#" style="color: orange;">水果</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a><span>|</span>
+					<a href="#">洗衣液</a>
+				</div>
+				<div class="box-none">
+					<ul class="history">
+						<li><span>最近搜索</span></li>
+						<li><i><img src="img/lion.jpg"/></i></li>
+					</ul>
+					<ul class="hot">
+						<li class="title">
+							<span>正在热搜中</span>
+							<i id="none-btn">X</i>
+						</li>
+						<li><a href="#" style="border-color: #FF6600;">啤酒</a></li>
+						<li><a href="#">小龙虾</a></li>
+						<li><a href="#">小龙虾</a></li>
+						<li><a href="#">小龙虾</a></li>
+						<li><a href="#" style="border-color: #FF6600;">榴莲</a></li>
+						<li><a href="#">小龙虾</a></li>
+						<li><a href="#">小龙虾</a></li>
+						<li><a href="#" style="border-color: #FF6600;">粽子</a></li>
+						<li><a href="#">小龙虾</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="nav-bar">
+			<div class="fenlei">
+				<a href="#"><i class="iconfont icon-caidan"></i>苏宁超市频道分类</a>
+			</div>
+			<div class="nav-index">
+				<ul class="nav-index-list">
+					<li><a href="index.html">超市首页</a><em>|</em></li>
+					
+					<li><a href="#">今日必抢</a><em>|</em></li>
+					
+					<li><a href="#">苏宁生鲜</a><em>|</em></li>
+					
+					<li><a href="#">医药保健</a><em>|</em></li>
+					
+					<li><a href="#">特色馆</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main-con">
+				<ul id="list">
+					<!--<li>
+						<div class="_left">
+							<img src="img/apperweima.png" />
+							<p>南极人</p>
+							<p>399</p>
+							<input type="button" value="购买"/>
+						</div>
+						<div class="_right">
+							<input class="jian" type="button" value="-" />
+							<span class="num">0</span>
+							<input class="jia" type="button" value="+" />
+							<input class="del" type="button" value="删除"/>
+							<p></p>
+						</div>
+					</li>-->
+				</ul>
+				<div class="sumPrice">合计：￥<span class="heji">00</span></div>
+			</div>
+		</div>
+		<div class="footer">
+			<p class="footer-list">
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a><span>|</span>
+				<a href="#">苏宁互联</a>
+			</p>
+			<p class="footer-list">
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">股东会员认证</a>
+			</p>
+			<p class="footer-list1">
+				Copyright@说的你发了多少呢就能看拉开距离<span>|</span>
+				<i class="iconfont icon-gongan"></i><a href="#">公安山东会计法律上的</a><span>|</span>
+				<a href="#">多少个梵蒂冈发的来看看</a>
+			</p>
+			<p class="footer-list1">
+				<a href="#">多少个梵蒂冈的</a><span>|</span>
+				<a href="#">多少个梵蒂冈的</a><span>|</span>
+				<a href="#">多少个梵蒂冈的</a><span>|</span>
+				的深VGV饭都快没了咖啡店吗
+			</p>
+			<p class="footer-list1">
+				<a href="#">的看法据了解OK乐扣乐扣 破看就看立刻开口</a><span>|</span>
+				死了肯德基拉开距离拉开距离靠你了
+			</p>
+			<p class="footer-list1">绝地反击厚实的奶粉乐扣乐扣奇偶及立刻离开家路口；离开了离开了姑姑姑</p>
+			<div class="last">
+				<a href="#"><img src="../img/wxrz.png"/></a>
+				<a href="#"><img src="../img/chengxin.png"/></a>
+				<a href="#"><img src="../img/unicom.png"/></a>
+				<a href="#"><img src="../img/dianxin.jpg"/></a>
+				<a href="#"><img src="../img/dianzi.png"/></a>
+			</div>
+		</div>
 	</body>
 </html>
+<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
